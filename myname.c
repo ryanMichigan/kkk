@@ -2,5 +2,5 @@
 
 
 main() {
-printf("ryan");
+printf("ryan\n");
 }
