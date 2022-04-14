@@ -20,7 +20,13 @@
 
 from pygame.locals import *
 
-import screeninfo
+# Configuration of building shape block
+# Width of the shape block
+BWIDTH     = 40
+# Height of the shape block
+BHEIGHT    = 40
+# Width of the line around the block
+MESH_WIDTH = 2
 
 # Configuration of the player board
 # Board line height
@@ -30,26 +36,14 @@ BOARD_UP_MARGIN  = 40
 # Margins around all lines
 BOARD_MARGIN     = 2
 
-height = {}
-height['screen'] = screeninfo.get_monitors()[0].height
-height['pure'] = height['screen'] - BOARD_HEIGHT*2 - BOARD_UP_MARGIN - BOARD_UP_MARGIN*2
-
-# Configuration of building shape block
-# Height of the shape block
-BHEIGHT    = int(height['pure'] / 20)
-# Width of the shape block
-BWIDTH     = BHEIGHT
-# Width of the line around the block
-MESH_WIDTH = 2
-
 # Color declarations in the RGB notation
 WHITE    = (255,255,255)
 RED      = (255,0,0)
 GREEN    = (0,255,0)
 BLUE     = (0,0,255)
 ORANGE   = (255,69,0)
-GOLD     = (195,131,65)
-PURPLE   = (128,0,128)
+GOLD     = (255,35,0)
+PURPLE   = (48,0,128)
 CYAN     = (0,255,255) 
 BLACK    = (0,0,0)
 
