@@ -328,7 +328,7 @@ class Tetris(object):
         """
         # Clean the screen, draw the board and draw
         # all tetris blocks
-        self.screen.fill(constants.PURPLE)
+        self.screen.fill(constants.BLUE)
         self.draw_board()
         for blk in self.blk_list:
             blk.draw()
@@ -336,6 +336,6 @@ class Tetris(object):
         pygame.display.flip()
 
 if __name__ == "__main__":
-    Tetris(20,10).run()
+    Tetris(20,40).run()
 
 #Special add to try pull requests
